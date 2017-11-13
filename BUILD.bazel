@@ -1,0 +1,23 @@
+
+cc_library(
+	name = "qvm",
+	visibility = ["//visibility:public"],
+	includes = [
+		"include/",
+	],
+	hdrs = glob([
+		"include/boost/**/*.hpp",
+		"include/boost/**/*.ipp",
+	]),
+	srcs = [
+	],
+	defines = [
+	],
+	deps = [
+		"@com_github_bazelboost_assert//:assert",
+		"@com_github_bazelboost_utility//:utility",
+		"@com_github_bazelboost_static_assert//:static_assert",
+		"@com_github_bazelboost_throw_exception//:throw_exception",
+		"@com_github_bazelboost_exception//:exception"
+	],
+)

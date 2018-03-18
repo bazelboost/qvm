@@ -15,9 +15,9 @@ cc_library(
 	],
 	deps = [
 		"@com_github_bazelboost_assert//:assert",
-		"@com_github_bazelboost_utility//:utility",
-		"@com_github_bazelboost_static_assert//:static_assert",
+		"@com_github_bazelboost_core//:core",
+		"@com_github_bazelboost_exception//:exception",
 		"@com_github_bazelboost_throw_exception//:throw_exception",
-		"@com_github_bazelboost_exception//:exception"
+		"@com_github_bazelboost_static_assert//:static_assert"
 	],
 )
